@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "target": "es6",
+        "module": "amd",
+        "outFile": "./dist/index.js",
+        "outDir": "./dist",
+        "declaration": true,
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": false,
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "exclude": ["node_modules", "**/*.test.ts"]
+}

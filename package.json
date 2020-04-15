@@ -1,0 +1,28 @@
+{
+    "name": "github-pages-with-rust",
+    "description": "GitHub action for building a project and deploying it to GitHub pages.",
+    "author": "Aster <192608617@qq.com>",
+    "version": "0.1.0",
+    "private": true,
+    "license": "MLP 2.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "wee lint && tsc -b",
+        "lint": "tslint **/*.ts --fix",
+        "reset": "git reset Head~ --soft"
+    },
+    "dependencies": {
+        "@actions/core": "1.2.6",
+        "@actions/exec": "1.0.4",
+        "@actions/github": "4.0.0",
+        "@actions/io": "1.0.2",
+        "@actions/tool-cache": "^1.6.0",
+        "typed-rest-client": "^1.7.3"
+    },
+    "devDependencies": {
+        "@types/jest": "26.0.14",
+        "@types/node": "14.11.2",
+        "typescript": "3.9.7"
+    }
+}

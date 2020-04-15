@@ -1,0 +1,19 @@
+name: 'Deploy Rust to GitHub Pages'
+description: 'Deploy to GitHub Pages by rust yew && trunk.'
+author: 'Aster <192607617@qq.com>'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'folder-plus'
+  color: 'green'
+inputs:
+  wasm:
+    description: 'Optional version of wasm-pack to install (eg. "v0.9.1", "latest")'
+    default: 'latest'
+  trunk:
+    description: 'Optional version of trunk to install (eg. "v0.6.0", "latest")'
+    default: 'latest'
+outputs:
+  DEPLOYMENT_STATUS:
+    description: 'The status of the deployment that indicates if the run failed or passed. Possible outputs include: success|failed|skipped'
